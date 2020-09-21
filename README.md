@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Demo
-Open [https://covid-19-tracker-7ad19.web.app/](covid-wuhan-tracker) to view it in the browser.
+Open [covid-wuhan-tracker](https://covid-19-tracker-7ad19.web.app/) to view it in the browser.
 
 ## Available Scripts
 
