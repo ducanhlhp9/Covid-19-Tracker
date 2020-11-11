@@ -7,6 +7,7 @@ import Table from "./Table";
 import {sortData, prettyPrintStat} from "./Util";
 import LineGraph from "./LineGraph";
 import "leaflet/dist/leaflet.css";
+import VideoPlay from "./videoplay";
 
 function App() {
     const [countries, setCountries] = useState([]);
@@ -78,8 +79,8 @@ function App() {
         <div className="App">
             <div className={"app__left"}>
                 <div className={"app__header"}>
-                    <h1>COvid 19 Tracker</h1>
-                    <h2 >AnhHD</h2>
+                    <h1>Covid 19 Tracker</h1>
+                    <h2>AnhHD X HoangAnh Vu</h2>
                     <FormControl className={"app_dropdown"}>
                         <Select
                             variant={"outlined"}
@@ -128,6 +129,7 @@ function App() {
                     countries={mapCountries}
                     center={mapCenter}
                     zoom={mapZoom}/>
+                <VideoPlay/>
 
             </div>
             <Card className={"app__right"}>
@@ -138,8 +140,9 @@ function App() {
                     <h3 className={"app__graphTitle"}> Worldwide new {casesType}</h3>
                     <LineGraph className={"app__graph"} casesType={casesType}/>
                 </CardContent>
-            </Card>
+                <h4>Data from <a href={"http://disease.sh/"}><h4>disease.sh</h4></a></h4>
 
+            </Card>
         </div>
     );
 }

@@ -37,12 +37,18 @@ body{
 .app__right{
     display: flex;
     flex-direction: column;
+    height: 770px;
 }
 .app__right .MuiCardContent-root{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 
+}
+.app__right h4{
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
 }
 .app_graph{
     flex-grow: 1;
